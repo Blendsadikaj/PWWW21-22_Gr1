@@ -23,5 +23,34 @@
             <li><a href="#"><i class="fa fa-wifi"></i></a></li>
         </ul>
     </nav>
+    <header>
+        <ul>
+            <li><a class="active" href="#">Homepage</a></li>
+            <li><a href="#">Style Demo</a></li>
+            <li><a href="#">Full Width</a></li>
+            <li><a href="#">DropDown</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Link Text</a></li>
+            <li><a href="#">Long link text</a></li>
+        </ul>
+        <div class="border"></div>
+    </header>
+    <section class="banner"></section>
+    <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky",window.scrollY);
+        })
+        window.addEventListener("click",function(){
+            const items = document.querySelectorAll("header ul li a");
+            items.forEach(item => {
+                item.addEventListener("click", () => {
+                    document.querySelector("a.active").classList.remove("active");
+                    item.classList.add("active");
+                })
+            })
+        })
+    </script>
 </body>
 </html>
