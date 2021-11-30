@@ -1,62 +1,65 @@
-        body{
-            margin: 0;
-            padding: 0;
-        }
-        .topbar{
-            background: #2E2E2E;
-            overflow: auto;
-            width: 100%;
-        }
-        .left{
-            float: left;
-        }
-        .right{
-            float: right;
-            vertical-align: middle; 
-            margin-right: 20px;
-        }
-        li{
-            display: inline-flex;
-        }
-        .left li a{
-            width: fit-content;
-            display: block;
-            font-family: Georgia, MyriadPro-Regular ,AdobeInvisFont;
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-            letter-spacing: 1px;
-            text-align: left;
-            font-size: 12px;
-            padding: 5px;
-            padding-top: 10px;
-            border-right: 1px white solid;
-        }
-        .right li {
-            background-color: #787878;
-            border-radius: 50%;
-        }
-        .right li a{
-            color: #fff;
-            display: inline-block;
-            text-align: center; 
-            vertical-align: middle;
-            height: 33px;
-            width: 33px;
-        }
-        .right li a i{
-            margin-top: 9px;
-        }
-        .right li a:hover{
-            border-radius: 50%;
-            background: #DB4A39;
-        }
-        .fa-wifi{
-            transform: rotate(50deg);
-        }
-        #last-icon{
-            border: none;
-        }
+body{
+    margin: 0;
+    padding: 0;
+}
+.topbar{
+    background: #2E2E2E;
+    overflow: auto;
+    width: 100%;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+    vertical-align: middle; 
+    margin-right: 20px;
+}
+li{
+    display: inline-flex;
+}
+.left li{
+    border-right: 1px white solid;
+}
+.left li:last-child{
+    border: none;
+}
+.left li a{
+    width: fit-content;
+    display: block;
+    font-family: Georgia, MyriadPro-Regular ,AdobeInvisFont;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: left;
+    font-size: 12px;
+    padding: 5px;
+    padding-top: 10px;        
+}
+.right li {
+    background-color: #787878;
+    border-radius: 50%;
+}
+.right li a{
+    color: #fff;
+    display: inline-block;
+    text-align: center; 
+    vertical-align: middle;
+    height: 33px;
+    width: 33px;
+}
+.right li a i{
+     margin-top: 9px;
+}
+.right li a:hover{
+    border-radius: 50%;
+    background: #DB4A39;
+}
+.fa-wifi{
+    transform: rotate(50deg);
+}
+
 header{
     position: fixed;
     left: 0;
@@ -65,39 +68,43 @@ header{
     justify-content: space-between;
     align-items: center;
     transition: 0.6s; 
-    padding: 40px 100px;
+    padding: 0px 30px;
     z-index: 1000000;
 }
 header.sticky{
-    padding: 0px 100px;
+    padding: 0px 30px;
     background: #fff;
+    position: sticky;   
+    top: 0;
+    opacity: 0.8;
 }
 header ul{
      position: relative;
      display: flex;
-     justify-content: center;
+     justify-content: left;
      align-items: center;
      padding-bottom: 7px;
-     padding-left: 0px;
+     padding-left: 20px;
      border-bottom: 3px solid #F1F1F1;
+     width: 98%;
+     left: 0;
 }
-
 header ul li{
     cursor: pointer;
     position: relative;
     list-style: none;
 }
 header ul li:first-child{
-    margin-left: -14px;
+    margin-left: -60px;
 }
 header ul li:last-child{
-    margin-right: -14px;
+    margin-right: 150px;
 }
 header ul li a{
     position: relative;
-    margin: 0 15px;
+    margin: 0 40px;
     text-decoration: none;
-    color: #9F9F9F;
+    color: #2E2E2E;
     letter-spacing: 2px;
     font-weight: bold;
     transition: 0.6s;
@@ -109,15 +116,16 @@ header ul li a{
 .banner{
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     background-size: cover;
 }
-header.sticky ul li a{
-    color: black;
+header.sticky.active ul li a{
+    color: #9F9F9F;
 }
- header a::before{
+header a::before{
     content: '';
     position: absolute;
+    justify-content: left;
     left: 0;
     top: 100%;
     width: 0%;
@@ -126,6 +134,9 @@ header.sticky ul li a{
     transition: all .5s linear;
     margin: 7px 0;
     border-radius: 20px;
+}
+.active{
+    color: #9F9F9F;
 }
 header li a.active::after{
     position: absolute;
@@ -136,6 +147,7 @@ header li a.active::after{
     left: 0;
     bottom: -7px;
     border-radius: 3px;
+    color: #9F9F9F;
 }
 header a::after{
     content: '';
@@ -148,14 +160,29 @@ header a::after{
     transition: all .5s linear;
     margin: 7px 0;
     border-radius: 10px;
+    color: #9F9F9F;
 }
 header a:hover:before{
     width: 100%;
     background: #0099FF;
-    
+    color: #9F9F9F;
 }
 header a:hover:after{
     width: 100%;
     background: #0099FF;
-} 
+    color: #9F9F9F;
+}
+.logo-searchbar{
+    position: absolute;
+    top: 130px;
+    width: 100%;
+    padding: 10px 0px;
+    border-bottom: 2px solid #E9E9E9;
+}
+img{
+    float: left;
+}
+ form{
+    float: right;
+}
  
