@@ -1,3 +1,6 @@
+html{
+    background-color: white;
+}
 body{
     margin: 0;
     padding: 0;
@@ -70,6 +73,8 @@ header{
     transition: 0.6s; 
     padding: 0px 30px;
     z-index: 1000000;
+    background-color: white;
+    height: 65px;
 }
 header.sticky{
     padding: 0px 30px;
@@ -86,7 +91,7 @@ header ul{
      padding-bottom: 7px;
      padding-left: 20px;
      border-bottom: 3px solid #F1F1F1;
-     width: 98%;
+     width: 95%;
      left: 0;
 }
 header ul li{
@@ -119,7 +124,7 @@ header ul li a{
     height: 150vh;
     background-size: cover;
 }
-header.sticky.active ul li a{
+header.sticky.activePage ul li a{
     color: #9F9F9F;
 }
 header a::before{
@@ -135,10 +140,10 @@ header a::before{
     margin: 7px 0;
     border-radius: 20px;
 }
-.active{
+.activePage{
     color: #9F9F9F;
 }
-header li a.active::after{
+header li a.activePage::after{
     position: absolute;
     content: '';
     height: 3px;
@@ -177,12 +182,109 @@ header a:hover:after{
     top: 130px;
     width: 100%;
     padding: 10px 0px;
+    display: flex;
     border-bottom: 2px solid #E9E9E9;
+    background-color: white;
 }
-img{
+.logo-searchbar img{
     float: left;
+    padding-left: 80px;
 }
- form{
+.logo-searchbar form{
     float: right;
+    margin: auto;
+    padding-left: 1100px;
+}
+.logo-searchbar form button{
+    color: #FFFFFF;
+    background-color: #0099FF;
+    border-radius: 10px;
+    height: 30px;
+    border: none;
+    font-family: Georgia,MyriadPro-Regular,AdobeInvisFont;
+}
+.logo-searchbar form input{
+    height: 30px;
+    font-family: Georgia,MyriadPro-Regular,AdobeInvisFont;
+    border: none;
+    color: #999999;
+    background-color: #F1F1F1;
+    border-radius: 5px;
 }
  
+
+/* SLIDESHOOW */
+.slider{
+    width: 100%;
+    height: 400px;
+    padding-top: 270px;
+    border-bottom: 10px solid #E9E9E9;
+    background-color: #F1F1F1;
+    display: flex;
+}
+.slider .description{
+    padding: 100px;
+    width: 40%;
+    float: left;
+    font-family: Georgia,MyriadPro-Regular,AdobeInvisFont;
+}
+.slider .description h1{
+    color: #333333;
+}
+.slider .description p{
+    color: #666666;
+}
+.slider .description button{
+    border-radius: 5px;
+    height: 30px;
+    color: white;
+    background-color: #0099FF;
+    border: none;
+}
+.slideshow-container {
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+    height: 322px;
+    float: right;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    height: 100%;
+    display: none;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
