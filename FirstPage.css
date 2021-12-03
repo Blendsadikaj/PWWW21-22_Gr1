@@ -9,6 +9,7 @@ body{
     background: #2E2E2E;
     overflow: auto;
     width: 100%;
+    height: 65px;
 }
 .left{
     float: left;
@@ -63,8 +64,15 @@ li{
     transform: rotate(50deg);
 }
 
+.ghost{
+     height: 1px; 
+}
+.hidden{
+    display: none;
+}
+
 header{
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     width: 100%;
     display: flex;
@@ -76,13 +84,27 @@ header{
     background-color: white;
     height: 65px;
 }
-header.sticky{
+.fixed {
+    position: sticky; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #fff;
+}
+/* .sticky{
     padding: 0px 30px;
     background: #fff;
     position: sticky;   
     top: 0;
     opacity: 0.8;
-}
+} */
+/* header.sticky{
+    padding: 0px 30px;
+    background: #fff;
+    position: sticky;   
+    top: 0;
+    opacity: 0.8;
+} */
 header ul{
      position: relative;
      display: flex;
@@ -216,8 +238,8 @@ header a:hover:after{
 /* SLIDESHOOW */
 .slider{
     width: 100%;
-    height: 400px;
-    padding-top: 270px;
+    height: 370px;
+    padding-top: 230px;
     border-bottom: 10px solid #E9E9E9;
     background-color: #F1F1F1;
     display: flex;
@@ -243,10 +265,9 @@ header a:hover:after{
 }
 .slideshow-container {
     max-width: 900px;
-    position: relative;
-    margin: auto;
     height: 322px;
     float: right;
+    padding-top: 20px;
   }
   
   /* Hide the images by default */

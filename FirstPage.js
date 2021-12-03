@@ -1,7 +1,16 @@
-window.addEventListener("scroll",function(){
-    var header = document.querySelector("header");
-    header.classList.toggle("sticky",window.scrollY);
-})
+$(window).scroll(function(){
+  var nav = $("nav");
+  var headerTop =  nav.offset().top;
+  var scrollTop = $(window).scrollTop();
+  if(headerTop < scrollTop){
+    $("header").addClass("fixed");
+    $(".ghost").removeClass("hidden");
+}else{
+    $("header").removeClass("fixed");
+    $(".ghost").addClass("hidden");
+}
+});  
+
 window.addEventListener("click",function(){
     const items = document.querySelectorAll("header ul li a");
     items.forEach(item => {
