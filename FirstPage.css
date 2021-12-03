@@ -90,21 +90,8 @@ header{
     top: 0;
     width: 100%;
     background: #fff;
+    opacity: 0.8;
 }
-/* .sticky{
-    padding: 0px 30px;
-    background: #fff;
-    position: sticky;   
-    top: 0;
-    opacity: 0.8;
-} */
-/* header.sticky{
-    padding: 0px 30px;
-    background: #fff;
-    position: sticky;   
-    top: 0;
-    opacity: 0.8;
-} */
 header ul{
      position: relative;
      display: flex;
