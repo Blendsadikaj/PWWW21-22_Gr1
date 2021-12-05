@@ -193,8 +193,9 @@ header a:hover:after{
 .logo-searchbar form{
     float: right;
     place-self: center;
-    text-align: center;
+    text-align: right;
     width: 50%;
+    padding-right: 70px;
 }
 .logo-searchbar form button{
     color: #FFFFFF;
