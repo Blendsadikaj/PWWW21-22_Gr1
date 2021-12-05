@@ -273,7 +273,9 @@ header a:hover:after{
     height: 100%;
     display: none;
   }
-
+  .mySlides:nth-child(1){
+    display: block;
+  }
   /* The dots/bullets/indicators */
   .dot {
     cursor: pointer;
