@@ -2,74 +2,16 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="FirstPage.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{
-            margin: 0;
-            padding: 0;
-        }
-        nav{
-            background: #2E2E2E;
-            overflow: auto;
-            width: 100%;
-        }
-        .left{
-            float: left;
-        }
-        .right{
-            float: right;
-            vertical-align: middle; 
-            margin-right: 20px;
-        }
-        li{
-            display: inline-flex;
-        }
-        .left li a{
-            width: fit-content;
-            display: block;
-            font-family: Georgia, MyriadPro-Regular ,AdobeInvisFont;
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-            letter-spacing: 1px;
-            text-align: left;
-            font-size: 12px;
-            padding: 5px;
-            padding-top: 10px;
-            border-right: 1px white solid;
-        }
-        .right li {
-            background-color: #787878;
-            border-radius: 50%;
-        }
-        .right li a{
-            color: #fff;
-            display: inline-block;
-            text-align: center; 
-            vertical-align: middle;
-            height: 33px;
-            width: 33px;
-        }
-        .right li a i{
-            margin-top: 9px;
-        }
-        .right li a:hover{
-            border-radius: 50%;
-            background: #DB4A39;
-        }
-        .fa-wifi{
-            transform: rotate(50deg);
-        }
-        #last-icon{
-            border: none;
-        }
-    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="FirstPage.js"></script>
+    
 </head>
 <body>
-    <nav>
+    <nav class="topbar">
         <ul class="left">
             <li><a href="#">Sign Up</a></li>
             <li><a href="#">Login</a></li>
@@ -84,5 +26,159 @@
             <li><a href="#"><i class="fa fa-wifi"></i></a></li>
         </ul>
     </nav>
+    <header>
+        <ul>
+            <li><a class="activePage" href="#">Homepage</a></li>
+            <li><a href="#">Style Demo</a></li>
+            <li><a href="#">Full Width</a></li>
+            <li><a href="#">DropDown</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Link Text</a></li>
+            <li><a href="#">Long link text</a></li>
+        </ul>
+    </header>
+    <section class="logo-searchbar">
+        <div style="width: 50%">
+            <img src="download.png">
+        </div>
+        <form class="search-form">
+            <input type="text" placeholder="Search our website...">
+            <button>Search</button>
+    </form>
+    </section>
+    <br>
+    <div class="slider">
+
+        <div class="description">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque adipisci autem amet officia asperiores reprehenderit dignissimos molestiae, rem, delectus officiis vitae explicabo mollitia obcaecati. Autem numquam incidunt vel aliquid deleniti?</p>
+            <button>Read More <i class="fa fa-angle-double-right"></i></button>
+        </div>
+
+
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="img1.jpg" style="width:100%">   
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="img2.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade"> 
+          <img src="img3.jpg" style="width:100%">
+        </div>
+
+        <div style="text-align:left; margin-top: -25px;padding-left: 20px;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+
+      </div>
+    </div>
+    <div class="intro">
+        <div class="left">
+            <img src="leftIntro.png" alt="">
+        </div>
+        <div class="right grid-container">
+            <div class="grid-item">
+                <img src="cat.png" alt="">
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima ad maxime sunt inventore tenetur porro vero. Numquam facilis cum labore dolor quasi unde praesentium consequuntur aperiam, totam quod repellat reiciendis.</p>
+            </div>
+            <div class="grid-item">
+                <img src="cat.png" alt="">
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima ad maxime sunt inventore tenetur porro vero. Numquam facilis cum labore dolor quasi unde praesentium consequuntur aperiam, totam quod repellat reiciendis.</p>
+            </div>
+            <div class="grid-item">
+                <img src="cat.png" alt="">
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima ad maxime sunt inventore tenetur porro vero. Numquam facilis cum labore dolor quasi unde praesentium consequuntur aperiam, totam quod repellat reiciendis.</p>
+            </div>
+            <div class="grid-item">
+                <img src="cat.png" alt="">
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima ad maxime sunt inventore tenetur porro vero. Numquam facilis cum labore dolor quasi unde praesentium consequuntur aperiam, totam quod repellat reiciendis.</p>
+            </div>
+        </div>
+    </div>
+    <section class="shout">
+        <div class="text">
+            <h3 style="margin-bottom: 0;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+            <p style="margin-top: 10px;">Why not try our services today, you won’t regret your choice !</p>
+        </div>
+        <div class="contact">
+            <button>Contact Us Today</button>
+        </div>
+        
+    </section>
+
+    <section class="footer">
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>About Us</h2>
+                <img src="aboutus.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint architecto dignissimos aperiam eius repellat! Voluptatum, officiis, excepturi, itaque harum quod mollitia debitis cupiditate nihil numquam eaque sit id incidunt quo.</p>
+                <a class="readMore" href="#">Read More <i class="fa fa-angle-double-right"></i></a>
+            </div>
+            <div class="grid-item">
+                <h3>Quick Links</h2>
+                <ul class="quickLinks">
+                    <li><i class="fa fa-angle-double-right"><a href="">Link 1</a></i></li>
+                    <li><i class="fa fa-angle-double-right"><a href="">Link 2</a></i></li>
+                    <li><i class="fa fa-angle-double-right"><a href="">Link 3</a></i></li>
+                    <li><i class="fa fa-angle-double-right"><a href="">Link 4</a></i></li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <h3>LATEST BLOG POSTS</h3>
+                <div class="postTitle">
+                    <h5>Post Title</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero voluptate itaque.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi velit nostrum dolores labore, rem sunt dicta corrupti.</p>
+                    <a class="readMore" href="#">Read More <i class="fa fa-angle-double-right"></i></a>
+                </div>
+                <div style="padding-top: 40px;" class="postTitle">
+                    <h5>Post Title</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero voluptate itaque.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi velit nostrum dolores labore, rem sunt dicta corrupti.</p>
+                    <a class="readMore" href="#">Read More <i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+            <div class="grid-item"> 
+               <h3>Contact Us</h3>
+               <form class="contactUsForm" action="/my-handling-form-page" method="post">
+                <ul>
+                 <li>
+                   <input placeholder="Name" type="text" id="name" name="user_name">
+                 </li>
+                 <li>
+                   <input placeholder="Email" type="email" id="mail" name="user_email">
+                 </li>
+                 <li>
+                    <input placeholder="Subject" type="text" id="mail" name="subject">
+                  </li>
+                 <li>
+                   <textarea placeholder="Message" id="msg" name="user_message"></textarea>
+                 </li>
+                 <li>
+                    <button>Submit</button>
+                  </li>
+                </ul>
+               </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright © 2013 Domain Name - All Rights Reserved</p>
+    </footer>
+
+    <!-- <section class="banner"></section> -->
 </body>
 </html>
