@@ -1,9 +1,8 @@
-html{
-    background-color: white;
-}
+@import url('http://fonts.cdnfonts.com/css/myriad-pro');
 body{
     margin: 0;
     padding: 0;
+    font-family:  Georgia,'Myriad Pro';;
 }
 .topbar{
     background: #2E2E2E;
@@ -30,7 +29,6 @@ li{
 .left li a{
     width: fit-content;
     display: block;
-    font-family: Georgia, MyriadPro-Regular ,AdobeInvisFont;
     text-decoration: none;
     color: #fff;
     font-weight: bold;
@@ -115,7 +113,6 @@ header ul li a{
     font-weight: bold;
     transition: 0.6s;
     text-transform: uppercase;
-    font-family: Georgia,MyriadPro-Regular,AdobeInvisFont;
     font-size: 14px;
     text-align: left;
 }
@@ -205,12 +202,10 @@ header a:hover:after{
     height: 50px;
     width: 100px;
     border: none;
-    font-family: Georgia,MyriadPro-Regular,AdobeInvisFont;
 }
 .logo-searchbar form input{
     height: 50px;
     width: 200px;
-    font-family: Georgia,MyriadPro-Regular,AdobeInvisFont;
     border: none;
     color: #999999;
     background-color: #F1F1F1;
@@ -247,7 +242,6 @@ header a:hover:after{
     padding: 40px;
     width: 40%;
     float: left;
-    font-family: Georgia,MyriadPro-Regular,AdobeInvisFont;
 }
 .slider .description h1{
     color: #333333;
@@ -339,7 +333,6 @@ header a:hover:after{
     padding: 20px;
     font-size: 30px;
     text-align: center;
-    font-family: Georgia,MyriadPro-Regular,AdobeInvisFont;
   }
   .grid-item img{
       width: 80px;
@@ -405,7 +398,6 @@ header a:hover:after{
     text-align: left;
     padding-left: 80px;
     background-color: #1A1A1A;
-    font-family: Georgia,MyriadPro-Regular,AdobeInvisFont;
   }
   .footer .grid-item h3{
     color: white;
@@ -477,7 +469,7 @@ header a:hover:after{
     border-radius: 5px;
     height: 60px;
     color: white;
-    font-family: Arial-BoldMT,Georgia,MyriadPro-Regular,AdobeInvisFont;
+    font-family: 'Arial-BoldMT',Georgia,'Myriad Pro';
 }
 
 .contactUsForm input {
@@ -497,7 +489,7 @@ header a:hover:after{
 .contactUsForm input[type=text],.contactUsForm input[type=email]{
     color: white;
     padding-left: 5px;
-    font-family: Arial-BoldMT,Georgia,MyriadPro-Regular,AdobeInvisFont;
+    font-family: 'Arial-BoldMT',Georgia,'Myriad Pro';
 }
 footer{
     background-color: #222222;
