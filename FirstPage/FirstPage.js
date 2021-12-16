@@ -9,7 +9,7 @@ $(window).scroll(function(){
     $("header").removeClass("fixed");
     $(".ghost").addClass("hidden");
 }
-});  
+});
 
 window.addEventListener("click",function(){
     const items = document.querySelectorAll("header ul li a");
