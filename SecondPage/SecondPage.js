@@ -1,5 +1,4 @@
-// setTimeout(function(){
-//     if ($('#preloader').length > 0) {
-//       $('#preloader').remove();
-//     }
-//   }, 800)
+$(window).on("load", function () {
+    $("#preloader").fadeOut(2000);
+    $(".content").fadeIn(2000)
+ })
