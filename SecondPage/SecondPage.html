@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="zxx">
+<html lang="zxx">
 
 <head>
    <meta charset="UTF-8">
@@ -19,38 +19,23 @@
       <div id="status"></div>
    </div>
    <div class="content">
-      <nav class="topbar">
-         <ul class="left">
-             <li><a href="#">Sign Up</a></li>
-             <li><a href="#">Login</a></li>
-             <li><a href="#">RSS Feeds</a></li>
-             <li><a href="#" id="last-icon">Archived News</a></li>
-         </ul>
-         <ul class="right">
-             <li><a href="https://www.linkedin.com/feed" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-             <li><a href="https://twitter.com/login" target="_blank"><i class="fa fa-twitter"></i></a></li>
-             <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
-         </ul>
-     </nav>
       <section class="header-outer">
          <div>
             <div class="breadcrumb-content">
                <h2>Book Your Room</h2>
-               <nav aria-label="breadcrumb">
-                  <ul class="breadcrumb">
-                     <li class="breadcrumb-item"><a href="../FirstPage/FirstPage.html">Home</a></li>
-                     <li class="breadcrumb-item active" aria-current="page">Book Your Room</li>
-                  </ul>
-               </nav>
+               <ul class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="../FirstPage/FirstPage.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Book Your Room</li>
+               </ul>
             </div>
          </div>
          <div class="section-overlay"></div>
       </section>
       <section class="detail">
          <div>
-            <div class="detail-content content-wrapper">
-               <div class="detail-info">
-                  <div style="text-align: center;" class="detail-info-content clearfix">
+            <div class="detail-content">
+               <div>
+                  <div style="text-align: center;" class="detail-info-content">
                      <h2>Delux Room</h2>
                      <div class="deal-rating">
                         <span class="fa fa-star checked"></span>
@@ -70,7 +55,7 @@
                      </ol>
                   </div>
                </div>
-               <div class="description detail-box">
+               <div class="detail-box">
                   <div class="detail-title">
                      <h3>Description</h3>
                   </div>
@@ -235,40 +220,54 @@
                      </div>
                   </div>
                </div>
-               <div class="comments-form detail-box">
-                  <div class="detail-title">
-                     <h3>Add Your Comment</h3>
-                  </div>
-                  <form>
-                     <div>
-                        <div class="textarea form-group">
-                           <label for="Name">Your Comment:</label>
-                           <textarea></textarea>
-                        </div>
-                        <div class="form-group">
-                           <label for="Name">Name:</label>
-                           <input type="text" class="form-control" id="Name">
-                        </div>
-                        <div class="form-group">
-                           <label for="email">Email address:</label>
-                           <input type="email" class="form-control" id="email">
-                        </div>
-                        <div class="form-group">
-                           <label for="website">Website:</label>
-                           <input type="text" class="form-control" id="website">
-                        </div>
-                        <div>
-                           <div class="comment-btn">
-                              <a href="#" class="btn-blue btn-red">Submit Comment</a>
+                  <div class="detail-box">
+                     <div class="detail-title">
+                        <h3>Book Your Room</h3>
+                     </div>
+                     <form style="border: 1px solid #f1f1f1;padding: 30px;" id="bookForm">
+                        <div style="padding-left: 60px;">
+                           <div class="input-lines">
+                              <div  style="margin-right: 25px;">
+                                 <label for="Name">Name</label>
+                                 <input class="inputs" required type="text" class="form-control" id="Name" placeholder="Enter your name">
+                              </div>
+                              <div >
+                                 <label for="Name">Email</label>
+                                 <input class="inputs" required type="email" class="form-control" id="email" placeholder="Email">
+                              </div>
+                           </div>
+                           <div class="input-lines">
+                              <div class="date-input-arrival">
+                                 <label for="Name">Arrival date</label>
+                                 <input class="inputs" required type="date" class="form-control" id="date" placeholder="Arrival date">
+                              </div>
+                              <div>
+                                 <label for="Name">Departure date</label>
+                                 <input class="inputs" required type="date" class="form-control" id="date" placeholder="Departure date">
+                              </div>
+                           </div>
+                           <div>
+                              <label for="Name">Select number of guests</label>
+                              <select class="inputs" id="selectGuest" required name="selectGuest" class="form-control">
+                                 <option disabled selected value="">Guests</option>
+                                 <option value="2">1</option>
+                                 <option value="3">2</option>
+                                 <option value="4">3</option>
+                                 <option value="5">4</option>
+                              </select>
+                           </div>
+                           <div>
+                              <div class="comment-btn">
+                                 <button type="submit" onsubmit="return myFunction()" class="bookNow">Book Now</button>
+                              </div>
                            </div>
                         </div>
-                     </div>
-                  </form>
-               </div>
-            </div>
-         </div>
+                     </form>
+                  </div>
       </section>
    </div>
+   <footer>
+      <p>Copyright © 2013 Domain Name - All Rights Reserved</p>
+   </footer>
 </body>
-
 </html>
