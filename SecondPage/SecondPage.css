@@ -5,7 +5,7 @@
 	padding: 0;
 	border: 0;
 	outline: 0;
-	font-size: 100%;
+	/* font-size: 100%; */
 	background: 0 0;
 }
 
@@ -51,8 +51,8 @@ article {
 body {
 	font-size: 15px;
 	background: #fff;
-	font-family: poppins, sans-serif;
-	line-height: 1.5;
+	font-family: sans-serif;
+	line-height: 1.5em;
 	color: #6e8292;
 	font-weight: 300
 }
@@ -62,7 +62,7 @@ h1,h2,h3,h4,h5,h6 {
 	margin-bottom: 15px;
 	color: #636363;
 	margin-top: 0;
-	line-height: 1.5;
+	line-height: 1.5em;
 	font-family: poppins, sans-serif
 }
 
@@ -101,23 +101,23 @@ hr {
 p {
 	margin-bottom: 15px;
 	color: #6e8292;
-	line-height: 1.5
+	line-height: 1.5em;
 }
 
 ul li {
 	margin-bottom: 15px;
 	color: #777;
-	position: relative
+	position: relative;
 }
 
 a {
 	color: #002147;
-	transition: all ease-in-out .3s
+	transition: all ease-in-out .3s;
 }
 
 a:hover {
 	text-decoration: none;
-	color: #0d74ba
+	color: #0d74ba;
 }
 
 input[type=text],
@@ -133,17 +133,12 @@ select,
 	border: none;
 	border-radius: 0;
 	padding: 10px 15px;
-	width: 80%;
 	color: #444;
 	height: auto;
 	margin-bottom: 0;
 	box-shadow: none;
 	border-radius: 5px;
 }
-
-/* select.form-control{
-	width: 95%;
-} */
 
 select {
 	padding: 10px 20px
@@ -168,45 +163,11 @@ img {
 
 section {
 	padding: 80px 0 0;
-	/* position: relative */
 }
 
 label {
 	font-weight: 500;
 	margin-bottom: 5px
-}
-
-a.btn-red {
-	padding: 9px 24px;
-    display: inline-block;
-    background: #0099FF;
-    color: #fff;
-    transition: all ease-in-out .3s;
-    cursor: pointer;
-    border-radius: 10px;
-    text-decoration: none;
-    height: 25px;
-    padding-top: 10px;
-}
-
-a.btn-red:hover {
-	background: #0172bd;
-	color: #fff;
-	border-color: #0099FF
-}
-
-a.btn-white {
-	background: 0 0;
-	border-color: #fff;
-	color: #fff
-}
-
-.text-uppercase {
-	text-transform: uppercase
-}
-
-.white {
-	color: #fff!important
 }
 
 #loader{
@@ -529,13 +490,13 @@ footer p{
 .inputs{
 	background-color: #f1f1f1 !important;
     border-radius: 7px;
-    width: 70%;
+    width: 210px;
 	height: 30px !important;
 }
 	
 
 .inputs[type="date"]{
-	width: 198px;
+	width: 210px;
 }
 
 .bookNow{
@@ -554,12 +515,12 @@ form p{
 }
 
 .date-input-arrival{
-	margin-right: 25px;
+	margin-right: 50px;
 }
 
 select.inputs{
 	height: 45px !important;
-	width: 93% !important;
+	width: 530px !important;
 }
 
 .input-lines{
@@ -569,4 +530,8 @@ select.inputs{
 
 input:invalid {
 	box-shadow: 0 0 5px 1px red;
+}
+
+.labels{
+	display: block;
 }
