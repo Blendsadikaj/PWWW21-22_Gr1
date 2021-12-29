@@ -334,6 +334,7 @@ section.header-outer {
 .column-item {
     margin: 20px;
     box-shadow: 0 0 10px #ccccccb0;
+    height: 500px;
 }
 
 .column-content {
