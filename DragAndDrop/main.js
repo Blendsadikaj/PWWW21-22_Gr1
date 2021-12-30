@@ -35,7 +35,16 @@ function drop(event){
         // event.target.style.backgroundColor = window.getComputedStyle(draggableElement).color; this is how you would access css of an element
         draggableElement.classList.add("dragged");
         draggableElement.setAttribute("draggable","false");
-        event.target.insertAdjacentHTML("afterbegin",`<img src = "${draggableElement.getAttribute("src")}"></img>`);
+        event.target.insertAdjacentHTML("afterbegin",`<img src = "${draggableElement.getAttribute("src")}" class = "draggable-interface-image"></img>`);
+    }
+    const divPictures = document.getElementsByClassName("droppable");
+    const finishedPictures = Array.from(divPictures).reduce(((accumulator, divPicture) => {
+        return divPicture.children.length > 1 && accumulator;
+    }), true);
+
+    if (finishedPictures) {
+        document.getElementById("success").innerHTML =
+            `<img src="../images/success.png"></img>`
     }
 }
 
