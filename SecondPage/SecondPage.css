@@ -430,6 +430,10 @@ td.excludes ul li i {
 	display: inline-block
 }
 
+.comment-desc h4 a{
+	text-decoration: underline;
+}
+
 .comment-desc p {
 	margin: 0
 }

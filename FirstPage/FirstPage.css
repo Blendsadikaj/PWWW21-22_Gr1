@@ -334,6 +334,9 @@ header a:hover:after{
     color: #666666;
     font-size: 13px;
   }
+  .grid-item address p{
+    font-size: 17px;
+  }
 
   /* Shout css */
   .shout{
@@ -489,4 +492,9 @@ footer{
 }
 footer p{
     padding-left: 80px;
+}
+
+.address-frame iframe{
+  height: 200px;
+  width: 500px;
 }
