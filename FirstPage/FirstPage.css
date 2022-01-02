@@ -175,19 +175,7 @@ header a:hover:after{
     background: #0099FF;
     color: #9F9F9F;
 }
-.logo-searchbar{
-    position: absolute;
-    top: 128px;
-    width: 100%;
-    padding: 10px 0px;
-    display: flex;
-    border-bottom: 2px solid #E9E9E9;
-    background-color: white;
-}
-.logo-searchbar img{
-    float: left;
-    padding-left: 80px;
-}
+
 .logo-searchbar form{
     float: right;
     place-self: center;

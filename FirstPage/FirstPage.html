@@ -9,6 +9,27 @@
     <title>Document</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="FirstPage.js"></script>
+    <style>
+        .logo-searchbar{
+            position: absolute;
+            top: 128px;
+            width: 100%;
+            padding: 10px 0px;
+            display: flex;
+            border-bottom: 2px solid #E9E9E9;
+            background-color: white;
+        }
+        .logo-searchbar .rotatingDiv{
+        padding-left: 50px;
+        }
+        .logo-searchbar .animation{
+            float: left;
+            animation: logo 10s linear infinite;
+        }
+        @keyframes logo {
+        to {transform: rotateY(360deg)};
+        }
+    </style>
 </head>
 <body>
     <nav class="topbar">
@@ -37,7 +58,10 @@
 
     <section class="logo-searchbar">
         <div style="width: 50%">
-            <img src="../images/download.png">
+            <div class="rotatingDiv">
+                <img class="animation" src="../images/logo4.jpg">
+            </div>
+            
         </div>
 
         <form class="search-form">
