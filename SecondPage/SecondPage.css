@@ -471,6 +471,10 @@ span.travel-date {
 	font-size: 12px
 }
 
+span.travel-date p {
+	font-style: italic;
+}
+
 span.bold {
 	font-weight: 500
 }

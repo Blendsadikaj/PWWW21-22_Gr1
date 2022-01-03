@@ -220,7 +220,6 @@ header a:hover:after{
 .slider{
     width: 100%;
     height: fit-content;
-    padding-top: 230px;
     border-bottom: 10px solid #E9E9E9;
     background-color: #F1F1F1;
     display: flex;
@@ -313,8 +312,13 @@ header a:hover:after{
     color: #0099FF;
   }
   .grid-item p {
-    color: #666666;
     font-size: 13px;
+    column-count: 2;
+    column-gap: 40px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-rule-color: lightblue;
+
   }
   .grid-item address p{
     font-size: 17px;
@@ -408,6 +412,7 @@ header a:hover:after{
     border-bottom: 1px solid #232323;
     padding-bottom: 22px;
   }
+ 
   .quickLinks a{
       text-decoration: none;
       padding-left: 22px;
@@ -483,4 +488,121 @@ footer p{
 .address-frame iframe{
   height: 200px;
   width: 500px;
+}
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+.popUp {
+  display: none;
+  position: fixed;
+  bottom: 27%;
+  right: 35%;
+  z-index: 9;
+  animation: fadeIn ease 0.7s;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.popUpContainer {
+  max-width: 500px;
+  padding: 10px;
+  background-color:  #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #a5a5a5;
+  width: 400px;
+}
+
+.popUpContainer h1{
+  margin-left: 23px;
+}
+
+.popUpContainer .gender{
+  display: flex;
+  margin: 0 0 20px 100px;
+}
+
+.popUpContainer .gender .female{
+  margin-left: 75px;
+}
+
+.popUpContainer .terms{
+  margin-left: 23px;
+}
+
+.popUpContainer input[type=text], .popUpContainer input[type=password] {
+  width: 80%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #d7d7d7;  
+  color: black;
+  border-radius: 10px;
+}
+
+.popUpContainer input[type=text]:focus, .popUpContainer input[type=password]:focus {
+  background-color: #BEBEBE;
+  outline: none;
+}
+
+.btn {
+  font-size: 19px;
+  font-family: inherit;
+  border: none;
+  padding: 1.75rem 4.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin: 10px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: #333333;
+}
+ .btn{
+    opacity: 0.9;
+}
+
+.popUpContainer hr{
+  margin: 20px auto;
+  height: 1px;
+  border: none;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, #c4c4c4));
+}
+.popUpContainer label{
+  display: block;
+}
+
+.popUpContainer .inputs{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.popUpContainer .buttons{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.popUpContainer .btn:hover, .open-button:hover {
+  opacity: 1;
 }
