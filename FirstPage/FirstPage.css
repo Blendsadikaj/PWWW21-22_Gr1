@@ -181,7 +181,7 @@ header a:hover:after{
     place-self: center;
     text-align: right;
     width: 50%;
-    padding-right: 70px;
+    padding-right: 320px;
 }
 .logo-searchbar form button{
     color: #FFFFFF;
@@ -274,24 +274,6 @@ header a:hover:after{
   .active, .dot:hover {
     background-color: #717171;
   }
-  
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
 
   /* Intro css */
   .intro{
@@ -336,6 +318,10 @@ header a:hover:after{
   }
   .grid-item address p{
     font-size: 17px;
+  }
+  .grid-item button a {
+    text-decoration: none;
+    color: white;
   }
 
   /* Shout css */
@@ -418,7 +404,7 @@ header a:hover:after{
       color: #989898;
       font-size: 20px;
   }
-  .quickLinks li {
+  .quickLinks dt {
     border-bottom: 1px solid #232323;
     padding-bottom: 22px;
   }

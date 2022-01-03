@@ -250,6 +250,7 @@ section.header-outer {
 	border-radius: 0;
     display: inline-flex;
 	background-color: #f1f1f1;
+	background-image: linear-gradient(#c3c2c2, #f1f1f1);
 }
 
 .breadcrumb-content li {
