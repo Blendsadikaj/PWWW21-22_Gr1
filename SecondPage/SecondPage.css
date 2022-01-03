@@ -115,6 +115,10 @@ a {
 	transition: all ease-in-out .3s;
 }
 
+span.comment-date::after{
+	content: "(18 Dec 2018)";
+}
+
 a:hover {
 	text-decoration: none;
 	color: #0d74ba;
@@ -328,7 +332,14 @@ section.header-outer {
 }
 
 .detail table td {
-	padding: 10px
+	padding: 10px;
+	position: relative;
+	overflow: hidden;
+}
+.detail table td p {
+	display: inline;
+	position: absolute;
+	white-space: nowrap;
 }
 
 td.title {
