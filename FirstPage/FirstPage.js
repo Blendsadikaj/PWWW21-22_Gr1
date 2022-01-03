@@ -100,11 +100,29 @@ window.onload = function(){
   let personEmail = sessionStorage.getItem("user")
   document.getElementById("username").innerHTML = personEmail;
   if(sessionStorage.getItem("user") != null){
-    console.log("Test");
     document.getElementById("logoutButton").style.display = "inline-block";
   }
   else{
-    console.log("Test");
     document.getElementById("logoutButton").style.display = "none";
   }
+}
+
+function contactUs(){
+
+  let userName = document.getElementById("name").value;
+  let email = document.getElementById("userEmail").value;
+  let subject = document.getElementById("subject").value;
+  let userMessage = document.getElementById("msg").value;
+
+  if(userMessage != '' && subject != '' && email != '' && userName != ''){
+    window.open("mailto:blendsadikaj2@gmail.com", "_blank", "resizable=yes, scrollbars=yes, titlebar=yes, width=800, height=900, top=10, left=10");
+    document.getElementById("contactUsMessage").submit();
+  }
+
+  $("#contactUsMessage").submit(function (e) {
+    e.preventDefault();
+});
+
+ 
+  
 }

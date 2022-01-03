@@ -190,22 +190,22 @@
                 </div>
                 <div class="grid-item">
                     <h3>Contact Us</h3>
-                    <form class="contactUsForm" method="post">
+                    <form id="contactUsMessage" class="contactUsForm" method="post">
                         <ul>
                             <li>
-                                <input placeholder="Name" type="text" id="name" name="user_name">
+                                <input required placeholder="Name" type="text" id="name" name="user_name">
                             </li>
                             <li>
-                                <input placeholder="Email" type="email" id="mail" name="user_email">
+                                <input required placeholder="Email" type="email" id="userEmail" name="user_email">
                             </li>
                             <li>
-                                <input placeholder="Subject" type="text" id="mail" name="subject">
+                                <input required placeholder="Subject" type="text" id="subject" name="subject">
                             </li>
                             <li>
-                                <textarea placeholder="Message" id="msg" name="user_message"></textarea>
+                                <textarea required placeholder="Message" id="msg" name="user_message"></textarea>
                             </li>
                             <li>
-                                <button><a href="mailto:webmaster@example.com">Submit</a></button>
+                                <button onclick="contactUs()">Submit</button>
                             </li>
                         </ul>
                     </form>
