@@ -19,8 +19,40 @@ function myFunction() {
 }
 
 function showPopUp() {
-    document.getElementsByClassName('content')[0].style.filter = 'blur(4px)';
-    document.getElementById("signature").style.display = "block";
+
+    $("#bookForm").submit(function(e) {
+        e.preventDefault();
+    });
+
+    const content = document.getElementById("page");
+    
+
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let arrivalDate = document.getElementById('arrivaldate').value;
+    let departureDate = document.getElementById('departuredate').value;
+
+    if(name != '' && email != '' && arrivalDate != '' && departureDate != ''){
+
+        let arrivalDt = new Date(arrivalDate);
+        let departureDt = new Date(departureDate);
+        let numOfGuests = document.getElementById("numberOfGuests");
+
+        if(arrivalDt < new Date()){
+            alert("You can not set arrival date on earlier date than today");
+        }
+        else if(arrivalDt >= departureDt){
+            alert("Arrival date can not be earlier or on the same date than departure date")
+        }
+        else if(numOfGuests.options[numOfGuests.selectedIndex].value == "")
+            alert("You have to enter the number of guests");
+        else{
+            content.style.pointerEvents = "none";
+            document.getElementsByClassName('content')[0].style.filter = 'blur(4px)';
+            document.getElementById("signature").style.display = "block";
+        }
+        
+    }
 }
 
 
@@ -82,8 +114,10 @@ paintCanvas.addEventListener('mouseup', stopDrawing);
 paintCanvas.addEventListener('mouseout', stopDrawing);
 
 function continueNow() {
-    if (isDrawn)
+    if (isDrawn){
+        document.getElementById("bookForm").submit();
         location.reload();
+    }
     else
         alert("You have to enter your signature");
 }

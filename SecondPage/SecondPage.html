@@ -14,7 +14,7 @@
 </head>
 
 <body>
-   <div class="content">
+   <div id="page" class="content">
       <div id="preloader">
          <div id="status"></div>
       </div>
@@ -267,7 +267,7 @@
                            <div class="input-lines">
                               <div style="margin-right: 50px;">
                                  <label class="labels" for="Name">Name</label>
-                                 <input class="inputs" required type="text" class="form-control" id="Name"
+                                 <input class="inputs" required type="text" class="form-control" id="name"
                                     placeholder="Enter your name">
                               </div>
                               <div>
@@ -279,18 +279,18 @@
                            <div class="input-lines">
                               <div class="date-input-arrival">
                                  <label class="labels" for="Name">Arrival date</label>
-                                 <input class="inputs" required type="date" class="form-control" id="date"
+                                 <input class="inputs" required type="date" class="form-control" id="arrivaldate"
                                     placeholder="Arrival date">
                               </div>
                               <div>
                                  <label class="labels" for="Name">Departure date</label>
-                                 <input class="inputs" required type="date" class="form-control" id="date"
+                                 <input class="inputs" required type="date" class="form-control" id="departuredate"
                                     placeholder="Departure date">
                               </div>
                            </div>
                            <div>
-                              <label class="labels" for="Name">Select number of guests</label>
-                              <select class="inputs" id="selectGuest" required name="selectGuest" class="form-control">
+                              <label class="labels" for="numberOfGuests">Select number of guests</label>
+                              <select class="inputs" id="numberOfGuests" required name="selectGuest" class="form-control">
                                  <option disabled selected value="">Guests</option>
                                  <option value="2">1</option>
                                  <option value="3">2</option>
@@ -300,7 +300,7 @@
                            </div>
                            <div>
                               <div class="comment-btn">
-                                 <button type="submit" onclick="showPopUp()" onsubmit="return myFunction()" class="bookNow">Book Now</button>
+                                 <button onclick="showPopUp()" class="bookNow">Book Now</button>
                               </div>
                            </div>
                         </div>

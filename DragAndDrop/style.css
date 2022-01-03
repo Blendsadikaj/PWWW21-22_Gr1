@@ -35,7 +35,7 @@ body {
 }
 .droppable {
   height: 6.5rem;
-  width: 6.5rem;
+  width: 7rem;
   margin: 1rem auto;
   display: flex;
   justify-content: center;
