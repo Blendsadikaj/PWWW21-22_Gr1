@@ -557,10 +557,10 @@ input:invalid {
 }
 
 .paint-canvas {
-	/* border: 1px black solid; */
 	display: block;
 	margin: 1rem;
 	background-color: #f1f1f1;
+	border: 1px dashed #afaeae;
   }
   
   .color-picker {
