@@ -555,3 +555,41 @@ input:invalid {
 .labels{
 	display: block;
 }
+
+.paint-canvas {
+	/* border: 1px black solid; */
+	display: block;
+	margin: 1rem;
+	background-color: #f1f1f1;
+  }
+  
+  .color-picker {
+	margin-left: 1rem;
+	vertical-align: middle;
+  }
+
+  .giveSignature{
+	display: none;
+	 position: fixed;
+	bottom: 27%;
+	right: 35%;
+	z-index: 9;
+	animation: fadeIn ease 0.7s; 
+   } 
+
+   @keyframes fadeIn{
+	0%{
+	  opacity: 0;
+	}
+	100%{
+	  opacity: 1;
+	}
+  }
+
+  .giveSignature button{
+	float: right;
+  }
+
+  .colorPicker{
+	  text-align: center;
+  }
