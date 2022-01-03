@@ -18,41 +18,68 @@ function myFunction() {
     }
 }
 
+let price = 0;
+
 function showPopUp() {
 
-    $("#bookForm").submit(function(e) {
+    $("#bookForm").submit(function (e) {
         e.preventDefault();
     });
 
     const content = document.getElementById("page");
-    
+
 
     let name = document.getElementById('name').value;
     let email = document.getElementById('email').value;
     let arrivalDate = document.getElementById('arrivaldate').value;
     let departureDate = document.getElementById('departuredate').value;
 
-    if(name != '' && email != '' && arrivalDate != '' && departureDate != ''){
+    if (name != '' && email != '' && arrivalDate != '' && departureDate != '') {
 
         let arrivalDt = new Date(arrivalDate);
         let departureDt = new Date(departureDate);
         let numOfGuests = document.getElementById("numberOfGuests");
 
-        if(arrivalDt < new Date()){
+        if (arrivalDt < new Date()) {
             alert("You can not set arrival date on earlier date than today");
         }
-        else if(arrivalDt >= departureDt){
+        else if (arrivalDt >= departureDt) {
             alert("Arrival date can not be earlier or on the same date than departure date")
         }
-        else if(numOfGuests.options[numOfGuests.selectedIndex].value == "")
+        else if (numOfGuests.options[numOfGuests.selectedIndex].value == "")
             alert("You have to enter the number of guests");
-        else{
+        else {
             content.style.pointerEvents = "none";
             document.getElementsByClassName('content')[0].style.filter = 'blur(4px)';
             document.getElementById("signature").style.display = "block";
         }
-        
     }
+}
+
+function calculatePrice() {
+    let arrivalDate = document.getElementById('arrivaldate').value;
+    let departureDate = document.getElementById('departuredate').value;
+    let arrivalDt = new Date(arrivalDate);
+    let departureDt = new Date(departureDate);
+    let numOfGuests = document.getElementById("numberOfGuests");
+    let initialPrice = 0;
+
+    if (departureDate == "" || arrivalDate == "") {
+        price = 0;
+    } else {
+        if (document.getElementById("allinclusive").checked) {
+            initialPrice = document.getElementById("allInclusicePrice").innerHTML;
+        } else {
+            initialPrice = document.getElementById("basicPackagePrice").innerHTML;
+        }
+
+        let numOfDays = departureDt.getDate() - arrivalDt.getDate();
+        if (numOfDays <= 0)
+            price = 0;
+        else
+            price = initialPrice * numOfDays * numOfGuests.value;
+    }
+    document.getElementById("bookingPrice").innerHTML = price;
 }
 
 
@@ -73,7 +100,7 @@ context.drawImage(img, 200, 0);
 
 context.font = "30px Arial";
 context.fillStyle = "black";
-context.fillText("Example: ",20 , 100);
+context.fillText("Example: ", 20, 100);
 
 const colorPicker = document.querySelector('.js-color-picker');
 
@@ -114,7 +141,8 @@ paintCanvas.addEventListener('mouseup', stopDrawing);
 paintCanvas.addEventListener('mouseout', stopDrawing);
 
 function continueNow() {
-    if (isDrawn){
+    if (isDrawn) {
+        alert("You made a reservetion of " + price + "$.")
         document.getElementById("bookForm").submit();
         location.reload();
     }

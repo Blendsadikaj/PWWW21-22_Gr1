@@ -152,6 +152,19 @@
                                     </ul>
                                  </td>
                               </tr>
+                              <tr class="prices">
+                                 <td class="title">Price</td>
+                                 <td>
+                                     <ul>
+                                       <li>
+                                          <p>All inclusive: <span id="allInclusicePrice" class="price">569</span><span class="price">$</span></p>
+                                       </li>
+                                       <li>
+                                          <p>Basic package: <span id="basicPackagePrice" class="price">300</span><span class="price">$</span></p>
+                                       </li>
+                                    </ul>
+                                 </td>
+                              </tr>
                            </tbody>
                         </table>
                      </div>
@@ -279,26 +292,33 @@
                            <div class="input-lines">
                               <div class="date-input-arrival">
                                  <label class="labels" for="Name">Arrival date</label>
-                                 <input class="inputs" required type="date" class="form-control" id="arrivaldate"
+                                 <input onchange="calculatePrice()" class="inputs" required type="date" class="form-control" id="arrivaldate"
                                     placeholder="Arrival date">
                               </div>
                               <div>
                                  <label class="labels" for="Name">Departure date</label>
-                                 <input class="inputs" required type="date" class="form-control" id="departuredate"
+                                 <input onchange="calculatePrice()" class="inputs" required type="date" class="form-control" id="departuredate"
                                     placeholder="Departure date">
                               </div>
                            </div>
                            <div>
                               <label class="labels" for="numberOfGuests">Select number of guests</label>
-                              <select class="inputs" id="numberOfGuests" required name="selectGuest" class="form-control">
+                              <select onchange="calculatePrice()" class="inputs" id="numberOfGuests" required name="selectGuest" class="form-control">
                                  <option disabled selected value="">Guests</option>
-                                 <option value="2">1</option>
-                                 <option value="3">2</option>
-                                 <option value="4">3</option>
-                                 <option value="5">4</option>
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
                               </select>
                            </div>
-                           <div>
+                           <div style="margin-top: 30px; margin-bottom: 5px;">
+                              <label for="allinclusive">All inclusive</label>
+                              <input onchange="calculatePrice()" type="checkbox" id="allinclusive" name="allinclusive">
+                           </div>
+                           <div class="booking">
+                              <div id="showPrice">
+                                 <p>Price: <span class="price" id="bookingPrice">0$</span></p>
+                              </div>
                               <div class="comment-btn">
                                  <button onclick="showPopUp()" class="bookNow">Book Now</button>
                               </div>

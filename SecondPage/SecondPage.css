@@ -480,7 +480,8 @@ span.bold {
 }
 
 .comment-btn {
-	margin-top: 10px
+	margin-top: 10px;
+	width: 50%;
 }
 
 .comments-form textarea,
@@ -521,7 +522,7 @@ footer p{
 
 .bookNow{
 	background-color: #0099FF;
-    margin: 5px;
+    margin: 5px 5px 5px 0;
     padding: 5px;
     border-radius: 5px;
     color: white;
@@ -592,4 +593,26 @@ input:invalid {
 
   .colorPicker{
 	  text-align: center;
+  }
+
+  .prices p{
+	  position: relative !important;
+  }
+  .prices li{
+	  margin-bottom: 0 !important;
+  }
+
+  .price{
+	color: #0aa50a;
+  }
+
+  .booking{
+	display: inline-block;
+    width: 70%;
+  }
+
+  #showPrice{
+	  float: right;
+	  margin-top: 20px;
+	  width: 40%;
   }
