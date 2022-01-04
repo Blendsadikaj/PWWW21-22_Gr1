@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script for="window" src="FirstPage.js" defer></script>
     <style>
@@ -35,243 +35,248 @@
                 transform: rotateY(360deg)
             }
 
-            ;
+        ;
         }
     </style>
 </head>
 
 <body>
-    <div class="content">
-        <nav class="topbar">
-            <ul class="left">
-                <li><a id="signupButton" onclick="signUp()" href="#">Sign Up</a></li>
-                <li><a id="loginButton" onclick="login()" href="#">Login</a></li>
-                <li id="logoutButton" style="display: none;"><a onclick="logout()" href="#">Logout</a></li>
-            </ul>
-            <div style="color: white;" class="right">
-                <h3 id="username"></h3>
-            </div>
-            <ul class="right">
-                <li><a href="https://www.linkedin.com/feed" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://twitter.com/login" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            </ul>
+<div class="content">
+    <nav class="topbar">
+        <ul class="left">
+            <li><a id="signupButton" onclick="signUp()" href="#">Sign Up</a></li>
+            <li><a id="loginButton" onclick="login()" href="#">Login</a></li>
+            <li id="logoutButton" style="display: none;"><a onclick="logout()" href="#">Logout</a></li>
+        </ul>
+        <div style="color: white;" class="right">
+            <h3 id="username"></h3>
+        </div>
+        <ul class="right">
+            <li><a href="https://www.linkedin.com/feed" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://twitter.com/login" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        </ul>
 
-        </nav>
+    </nav>
 
-        <header>
-            <ul>
-                <li><a class="activePage" href="#">Homepage</a></li>
-                <li><a href="../EventPage/eventPage.html">Events</a></li>
-                <li><a href="../RoomsPage/RoomsPage.html">Hotels</a></li>
-                <li><a href="../DragAndDrop/index.html">Explore</a></li>
-            </ul>
-        </header>
+    <header>
+        <ul>
+            <li><a class="activePage" href="#">Homepage</a></li>
+            <li><a href="../EventPage/eventPage.html">Events</a></li>
+            <li><a href="../RoomsPage/RoomsPage.html">Hotels</a></li>
+            <li><a href="../DragAndDrop/index.html">Explore</a></li>
+        </ul>
+    </header>
 
-        <section class="logo-searchbar">
-            <div style="width: 50%">
-                <div class="rotatingDiv">
-                    <img class="animation" src="../images/logo4.jpg">
-                </div>
-
+    <section class="logo-searchbar">
+        <div style="width: 50%">
+            <div class="rotatingDiv">
+                <img class="animation" src="../images/logo4.jpg">
             </div>
 
-            <form class="search-form">
-                <input type="text" placeholder="Search our website...">
-                <button>Search</button>
-            </form>
-        </section>
-
-        <div id="slidePhotos" class="slider">
-            <div class="description">
-                <h1>Attending <mark style="background-color: #E9E9E9;">Events</mark> Made Easy</h1>
-                <p>We'll help you find affordable hotels and houses that are near your <b>event</b>.</p>
-                <button>Read More <i class="fa fa-angle-double-right"></i></button>
-            </div>
-
-            <div class="slideshow-container">
-                <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
-                    <img src="../images/img1.jpg" style="width:100%">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="../images/img2.jpg" style="width:100%">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="../images/img3.jpg" style="width:100%">
-                </div>
-
-                <div style="text-align:left; margin-top: -25px;padding-left: 20px;">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                </div>
-            </div>
         </div>
 
-        <div id="experiences" class="intro">
-            <div class="left">
-                <img src="../images/leftIntro.png" alt="">
+        <form class="search-form">
+            <input type="text" placeholder="Search our website...">
+            <button>Search</button>
+        </form>
+    </section>
+
+    <div id="slidePhotos" class="slider">
+        <div class="description">
+            <h1>Attending
+                <mark style="background-color: #E9E9E9;">Events</mark>
+                Made Easy
+            </h1>
+            <p>We'll help you find affordable hotels and houses that are near your <b>event</b>.</p>
+            <button>Read More <i class="fa fa-angle-double-right"></i></button>
+        </div>
+
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="../images/img1.jpg" style="width:100%">
             </div>
-            <div class="right grid-container">
-                <div class="grid-item">
-                    <img src="../images/downloadIcon.png" alt="">
-                    <h4>Download the App</h4>
-                    <p>Use the website or download the application on Desktop, Tablet, or Mobile.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="../images/signUpIcon.png" alt="">
-                    <h4>Create an Account</h4>
-                    <p>To book an event or room, create an account.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="../images/eventIcon.png" alt="">
-                    <h4>Pick an Event</h4>
-                    <p>Choose any festival, concert, conference, or show you want to attend.</p>
-                </div>
-                <div class="grid-item">
-                    <img src="../images/hotelIcon.png" alt="">
-                    <h4>Book your Room</h4>
-                    <p>Get room suggestions based on location, price, and ratings.</p>
-                </div>
+
+            <div class="mySlides fade">
+                <img src="../images/img2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../images/img3.jpg" style="width:100%">
+            </div>
+
+            <div style="text-align:left; margin-top: -25px;padding-left: 20px;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
-        <section id="contactUs" class="shout">
-            <div class="text">
-                <h3 style="margin-bottom: 0;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
-                <p style="margin-top: 10px;">Why not try our services today, you won’t regret your choice !</p>
-            </div>
-            <div class="contact">
-                <button>Contact Us Today</button>
-            </div>
-        </section>
+    </div>
 
-        <section id="messageUs" class="footer">
-            <div class="grid-container">
-                <div class="grid-item">
-                    <h3>About Us</h2>
-                        <figure style="margin:0">
-                            <img src="../images/aboutus.png" alt="">
-                            <figcaption style="font-size: 12px; color: white;">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit.</figcaption>
-                        </figure>
+    <div id="experiences" class="intro">
+        <div class="left">
+            <img src="../images/leftIntro.png" alt="">
+        </div>
+        <div class="right grid-container">
+            <div class="grid-item">
+                <img src="../images/downloadIcon.png" alt="">
+                <h4>Download the App</h4>
+                <p>Use the website or download the application on Desktop, Tablet, or Mobile.</p>
+            </div>
+            <div class="grid-item">
+                <img src="../images/signUpIcon.png" alt="">
+                <h4>Create an Account</h4>
+                <p>To book an event or room, create an account.</p>
+            </div>
+            <div class="grid-item">
+                <img src="../images/eventIcon.png" alt="">
+                <h4>Pick an Event</h4>
+                <p>Choose any festival, concert, conference, or show you want to attend.</p>
+            </div>
+            <div class="grid-item">
+                <img src="../images/hotelIcon.png" alt="">
+                <h4>Book your Room</h4>
+                <p>Get room suggestions based on location, price, and ratings.</p>
+            </div>
+        </div>
+    </div>
+    <section id="contactUs" class="shout">
+        <div class="text">
+            <h3 style="margin-bottom: 0;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+            <p style="margin-top: 10px;">Why not try our services today, you won’t regret your choice !</p>
+        </div>
+        <div class="contact">
+            <button>Contact Us Today</button>
+        </div>
+    </section>
 
-                        <p id="columnstyles">Travel Agency <abbr title="Travel Agency">TA</abbr> Lorem ipsum dolor sit amet consectetur
-                            adipisicing elit. Sint architecto dignissimos aperiam eius repellat! Voluptatum, officiis,
-                            excepturi, itaque harum quod mollitia debitis cupiditate nihil numquam eaque sit id incidunt
-                            quo.</p>
-                        <a class="readMore" href="#">Read More <i class="fa fa-angle-double-right"></i></a>
-                </div>
-                <div class="grid-item">
-                    <h3>Quick Links</h2>
-                        <dl class="quickLinks">
-                            <dt><i class="fa fa-angle-double-right"><a href="">Link 1</a></i></dt>
-                            <dt><i class="fa fa-angle-double-right"><a href="">Link 2</a></i></dt>
-                            <dt><i class="fa fa-angle-double-right"><a href="">Link 3</a></i></dt>
-                            <dt><i class="fa fa-angle-double-right"><a href="">Link 4</a></i></dt>
-                        </dl>
-                </div>
-                <div class="grid-item">
-                    <address>
-                        <h3>Our address</h3>
-                        <p>
-                            St. Agim Ramadani No. 103
-                        </p>
-                        <div class="address-frame">
-                            <iframe
+    <section id="messageUs" class="footer">
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>About Us</h2>
+                    <figure style="margin:0">
+                        <img src="../images/aboutus.png" alt="">
+                        <figcaption style="font-size: 12px; color: white;">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.
+                        </figcaption>
+                    </figure>
+
+                    <p id="columnstyles">Travel Agency <abbr title="Travel Agency">TA</abbr> Lorem ipsum dolor sit amet
+                        consectetur
+                        adipisicing elit. Sint architecto dignissimos aperiam eius repellat! Voluptatum, officiis,
+                        excepturi, itaque harum quod mollitia debitis cupiditate nihil numquam eaque sit id incidunt
+                        quo.</p>
+                    <a class="readMore" href="#">Read More <i class="fa fa-angle-double-right"></i></a>
+            </div>
+            <div class="grid-item">
+                <h3>Quick Links</h2>
+                    <dl class="quickLinks">
+                        <dt><i class="fa fa-angle-double-right"><a href="">Link 1</a></i></dt>
+                        <dt><i class="fa fa-angle-double-right"><a href="">Link 2</a></i></dt>
+                        <dt><i class="fa fa-angle-double-right"><a href="">Link 3</a></i></dt>
+                        <dt><i class="fa fa-angle-double-right"><a href="">Link 4</a></i></dt>
+                    </dl>
+            </div>
+            <div class="grid-item">
+                <address>
+                    <h3>Our address</h3>
+                    <p>
+                        St. Agim Ramadani No. 103
+                    </p>
+                    <div class="address-frame">
+                        <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.1581820260562!2d21.162295116168462!3d42.65800322422486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ec214a19539%3A0xcadfa1fd1a48f8a0!2sAgim%20Ramadani%2C%20Prishtin%C3%AB!5e0!3m2!1sen!2s!4v1641165924660!5m2!1sen!2s"
                                 width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-                            </iframe>
-                        </div>
-                    </address>
-                </div>
-                <div class="grid-item">
-                    <h3>Contact Us</h3>
-                    <form id="contactUsMessage" class="contactUsForm" method="post">
-                        <ul>
-                            <li>
-                                <input required placeholder="Name" type="text" id="name" name="user_name">
-                            </li>
-                            <li>
-                                <input required placeholder="Email" type="email" id="userEmail" name="user_email">
-                            </li>
-                            <li>
-                                <input required placeholder="Subject" type="text" id="subject" name="subject">
-                            </li>
-                            <li>
-                                <textarea required placeholder="Message" id="msg" name="user_message"></textarea>
-                            </li>
-                            <li>
-                                <button onclick="contactUs()">Submit</button>
-                            </li>
-                        </ul>
-                    </form>
-                </div>
+                        </iframe>
+                    </div>
+                </address>
             </div>
-
-        </section>
-
-        <footer>
-            <p>Copyright © 2013 Domain Name - All Rights Reserved</p>
-        </footer>
-    </div>
-    <div class="popUp" id="loginForm">
-        <form id="login" class="popUpContainer" >
-            <i onclick="closeLogin()" class="fa fa-times-circle fa-xl"></i>
-            <h1>Login</h1>
-            <div class="inputs">
-                <label for="email"><b>Email</b></label>
-                <input id="emailLogin" type="text" placeholder="Enter Email" name="email" required>
-
-                <label for="psw"><b>Password</b></label>
-                <input id="passwordLogin" required type="password" placeholder="Enter Password" name="psw" >
+            <div class="grid-item">
+                <h3>Contact Us</h3>
+                <form id="contactUsMessage" class="contactUsForm" method="post">
+                    <ul>
+                        <li>
+                            <input required placeholder="Name" type="text" id="name" name="user_name">
+                        </li>
+                        <li>
+                            <input required placeholder="Email" type="email" id="userEmail" name="user_email">
+                        </li>
+                        <li>
+                            <input required placeholder="Subject" type="text" id="subject" name="subject">
+                        </li>
+                        <li>
+                            <textarea required placeholder="Message" id="msg" name="user_message"></textarea>
+                        </li>
+                        <li>
+                            <button onclick="contactUs()">Submit</button>
+                        </li>
+                    </ul>
+                </form>
             </div>
+        </div>
 
-            <div class="buttons">
-                <button class="btn" onclick="showAlert('login')">Login</button>
+    </section>
+
+    <footer>
+        <p>Copyright © 2013 Domain Name - All Rights Reserved</p>
+    </footer>
+</div>
+<div class="popUp" id="loginForm">
+    <form id="login" class="popUpContainer">
+        <i onclick="closeLogin()" class="fa fa-times-circle fa-xl"></i>
+        <h1>Login</h1>
+        <div class="inputs">
+            <label for="email"><b>Email</b></label>
+            <input id="emailLogin" type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input id="passwordLogin" required type="password" placeholder="Enter Password" name="psw">
+        </div>
+
+        <div class="buttons">
+            <button class="btn" onclick="showAlert('login')">Login</button>
+        </div>
+    </form>
+</div>
+<div style="bottom: 30%" class="popUp" id="sign-up">
+    <form id="signUp" class="popUpContainer">
+        <i onclick="closeSignUp()" class="fa fa-times-circle fa-xl"></i>
+        <h1>Sign Up</h1>
+        <hr>
+        <div class="inputs">
+            <label for="email"><b>Email</b></label>
+            <input id="email" type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" id="password" name="psw" required>
+
+            <label for="psw"><b>Confirm Password</b></label>
+            <input type="password" placeholder="Enter Password" id="confirmPassword" name="psw" required>
+        </div>
+
+        <div class="gender">
+            <div class="male">
+                <input type="radio" id="html" name="gender" value="male" required>
+                <label for="html">Male</label><br>
             </div>
-        </form>
-    </div>
-    <div style="bottom: 30%" class="popUp" id="sign-up">
-        <form id="signUp" class="popUpContainer">
-            <i onclick="closeSignUp()" class="fa fa-times-circle fa-xl"></i>
-            <h1>Sign Up</h1>
-            <hr>
-            <div class="inputs">
-                <label for="email"><b>Email</b></label>
-                <input id="email" type="text" placeholder="Enter Email" name="email" required>
-
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" id="password" name="psw" required>
-
-                <label for="psw"><b>Confirm Password</b></label>
-                <input type="password" placeholder="Enter Password" id="confirmPassword" name="psw" required>
+            <div class="female">
+                <input type="radio" id="css" name="gender" value="female" required>
+                <label for="css">Female</label><br>
             </div>
+        </div>
 
-            <div class="gender">
-                <div class="male">
-                    <input type="radio" id="html" name="gender" value="male" required>
-                    <label for="html">Male</label><br>
-                </div>
-                <div class="female">
-                    <input type="radio" id="css" name="gender" value="female" required>
-                    <label for="css">Female</label><br>
-                </div>
-            </div>
+        <label class="terms">
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
+            Accept Terms and Agreements
+        </label>
 
-            <label class="terms">
-                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
-                Accept Terms and Agreements
-            </label>
+        <div class="buttons">
+            <button onclick="showAlert('signUp')" class="btn">Sign up</button>
+        </div>
+    </form>
+</div>
 
-            <div class="buttons">
-                <button onclick="showAlert('signUp')" class="btn">Sign up</button>
-            </div>
-        </form>
-    </div>
-   
 </body>
 
 </html>
