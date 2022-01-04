@@ -1,26 +1,29 @@
+
+let badWords = ["plenty"];
+
 $(window).on("load", function () {
-    $("#preloader").fadeOut(2000);
-    $(".content").fadeIn(2000);
+    $("#preloader").fadeOut(500);
+    $(".content").fadeIn(1000);
     document.getElementById("allInclusicePrice").innerHTML = localStorage.getItem("price");
     document.getElementById("basicPackagePrice").innerHTML = (localStorage.getItem("price")-100);
     document.getElementById("bigPicture").setAttribute("src",localStorage.getItem("img"));
     document.getElementById("hotelTitle").innerHTML = localStorage.getItem("title");
+    let myRe = /will*/gi;
+    let str = document.querySelector('.comment-desc').children[2].textContent;
+    let myArray;
+    while ((myArray = myRe.exec(str)) !== null) {
+        let msg = 'Found ' + myArray[0] + '. ';
+        msg += 'Next match starts at ' + myRe.lastIndex;
+        console.log(msg);
+    }
+    for(let i =0;i<badWords.length;i++){
+        var re = new RegExp(badWords[i],"gi");
+        const found = str.match(re);
+        console.log(found);
+        document.querySelector('.comment-desc').children[2].textContent = str.replaceAll(found,"****");
+        console.log(badWords[i]);
+      }
 })
-
-function myFunction() {
-    let allAreFilled = true;
-    console.log("teste");
-    document.getElementById("bookForm").querySelectorAll("[required]").forEach(function (i) {
-        console.log(i.value);
-        if (String.trim(i.getElementById("Name").value) === "")
-            allAreFilled = false;
-    }
-    )
-    if (!allAreFilled) {
-        alert('Fill all the fields');
-        return false;
-    }
-}
 
 let price = 0;
 
@@ -83,8 +86,16 @@ function calculatePrice() {
         else
             price = initialPrice * numOfDays * numOfGuests.value;
     }
-    document.getElementById("bookingPrice").innerHTML = price;
+
+    if(isNumber(price))
+        document.getElementById("bookingPrice").innerHTML = price;
+    else
+        alert("Something went wrong");
 }
+
+function isNumber(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n);
+  }
 
 
 let isDrawn = false;
