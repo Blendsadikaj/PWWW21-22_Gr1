@@ -27,6 +27,25 @@ body {
   justify-content: center;
   margin: 2rem;
 }
+
+.draggable-interface-image {
+    height: 6.5rem;
+    width: 7rem;
+}
+
+.draggable-interface-holder {
+    /*height: 200px;*/
+    /*width: 400px;*/
+}
+
+#success img {
+    width:300px;
+    height: 300px;
+    position: absolute;
+    top: 20vh;
+    right: 10vh;
+}
+
 .draggable {
     height: 8rem;
     width: 12rem;
@@ -78,8 +97,8 @@ body {
 .droppable.dropped {
   border-style: solid;
   color: #fff;
-  width: fit-content;
-  height: 200px;;
+  width: 7rem !important;
+  height: 6.5rem !important;
 }
 .droppable.dropped span {
     display: none;
