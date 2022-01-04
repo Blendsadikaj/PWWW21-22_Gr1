@@ -23,9 +23,6 @@ li{
 .left li{
     border-right: 1px white solid;
 }
-.left li:last-child{
-    border: none;
-}
 .left li a{
     width: fit-content;
     display: block;

@@ -1,6 +1,10 @@
 $(window).on("load", function () {
     $("#preloader").fadeOut(2000);
-    $(".content").fadeIn(2000)
+    $(".content").fadeIn(2000);
+    document.getElementById("allInclusicePrice").innerHTML = localStorage.getItem("price");
+    document.getElementById("basicPackagePrice").innerHTML = (localStorage.getItem("price")-100);
+    document.getElementById("bigPicture").setAttribute("src",localStorage.getItem("img"));
+    document.getElementById("hotelTitle").innerHTML = localStorage.getItem("title");
 })
 
 function myFunction() {

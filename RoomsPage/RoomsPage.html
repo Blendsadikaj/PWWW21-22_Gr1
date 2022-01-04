@@ -6,32 +6,10 @@
         <title>Document</title> 
         <link rel="stylesheet" href="RoomsPage.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="Roomspage.js" defer></script>
     </head>
 
     <body>
-        <nav class="topbar">
-            <ul class="left">
-                <li><a href="#">Sign Up</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">RSS Feeds</a></li>
-                <li><a href="#" id="last-icon">Archived News</a></li>
-            </ul>
-    
-            <ul class="right">
-                <li><a href="https://www.linkedin.com/feed" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://twitter.com/login" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
-            </ul>
-        </nav>
-    
-        <header>
-            <ul>
-                <li><a href="#">Homepage</a></li>
-                <li><a href="#contactUs">Events</a></li>
-                <li><a class="activePage" href="#">Hotels</a></li>
-                <li><a href="#">About us</a></li>
-            </ul>
-        </header>
 
         <section class="header-outer">
             <div>
@@ -58,8 +36,8 @@
                         <div class="column-item">
                             <img src="../images/hotel/room-1.jpg" alt="Image">
                             <div class="column-content">
-                                <h5>Starting: <span>$659</span> / PER </h5>
-                                <h3><a href="hotel-detail.html">Luxury Room</a></h3>
+                                <h5>Starting: <span class="price">$659</span> / PER </h5>
+                                <h3><a onclick="goToRoom('../images/hotel/room-1.jpg',659,'Luxury Room')">Luxury Room</a></h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                             </div>
                         </div>
@@ -68,8 +46,8 @@
                         <div class="column-item">
                             <img src="../images/hotel/room-2.jpg" alt="Image">
                             <div class="column-content">
-                                <h5>Starting: <span>$459</span> / PER </h5>
-                                <h3><a href="hotel-detail.html">Standard Room</a></h3>
+                                <h5>Starting: <span class="price">$459</span> / PER </h5>
+                                <h3><a onclick="goToRoom('../images/hotel/room-2.jpg',459,'Standard Room')">Standard Room</a></h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                             </div>
                         </div>
@@ -78,8 +56,8 @@
                         <div class="column-item">
                             <img src="../images/hotel/room-3.jpg" alt="Image">
                             <div class="column-content">
-                                <h5>Starting: <span>$259</span> / PER </h5>
-                                <h3><a href="hotel-detail.html">Double Room</a></h3>
+                                <h5>Starting: <span class="price">$259</span> / PER </h5>
+                                <h3><a onclick="goToRoom('../images/hotel/room-3.jpg',259,'Double Room')">Double Room</a></h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                             </div>
                         </div>
@@ -88,8 +66,8 @@
                         <div class="column-item">
                             <img src="../images/hotel/room-4.jpg" alt="Image">
                             <div class="column-content">
-                                <h5>Starting: <span>$159</span> / PER </h5>
-                                <h3><a href="hotel-detail.html">Single Room</a></h3>
+                                <h5>Starting: <span class="price">$159</span> / PER </h5>
+                                <h3><a onclick="goToRoom('../images/hotel/room-4.jpg',159,'Single Room')">Single Room</a></h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                             </div>
                         </div>
@@ -98,8 +76,8 @@
                         <div class="column-item">
                             <img src="../images/hotel/room-5.jpg" alt="Image">
                             <div class="column-content">
-                                <h5>Starting: <span>$609</span> / PER </h5>
-                                <h3><a href="hotel-detail.html">Super Room</a></h3>
+                                <h5>Starting: <span class="price">$609</span> / PER </h5>
+                                <h3><a onclick="goToRoom('../images/hotel/room-5.jpg',609,'Super Room')">Super Room</a></h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                             </div>
                         </div>
@@ -108,8 +86,8 @@
                         <div class="column-item">
                             <img src="../images/hotel/room-6.jpg" alt="Image">
                             <div class="column-content">
-                                <h5>Starting: <span>$759</span> / PER </h5>
-                                <h3><a href="hotel-detail.html">Amazing Room</a></h3>
+                                <h5>Starting: <span class="price">$759</span> / PER </h5>
+                                <h3><a onclick="goToRoom('../images/hotel/room-6.jpg',759,'Amazing Room')">Amazing Room</a></h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                             </div>
                         </div>

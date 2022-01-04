@@ -74,20 +74,34 @@ function closeSignUp() {
 
 function showAlert(action){
   if(action === "login"){
-    if(sessionStorage.getItem("user") != null)
-      alert("You are already logged in")
+    if(sessionStorage.getItem("user") != null){
+      document.getElementById("login").style.display = "none";
+      alert("You are already logged in");
+    }
+      
     else {
       hidden = false;
       sessionStorage.setItem("user",document.getElementById("emailLogin").value);
     }
-      
   }
   else{
-    if(sessionStorage.getItem("user") != null)
-      alert("You are already logged in")
-    else sessionStorage.setItem("user",document.getElementById("email").value);
+    if(sessionStorage.getItem("user") != null){
+      alert("You are already logged in");
+      document.getElementById("sign-up").style.display = "none";
+    }
+      
+    else{
+      let password = document.getElementById("password").value;
+      let confirmPassword = document.getElementById("confirmPassword").value;
+
+      if(password !== confirmPassword){
+        alert("You entered different password on confirm password");
+      }
+      else{
+        sessionStorage.setItem("user",document.getElementById("email").value);
+      }
+    } 
   }
-    
 }
 
 function logout(){
@@ -101,6 +115,8 @@ window.onload = function(){
   document.getElementById("username").innerHTML = personEmail;
   if(sessionStorage.getItem("user") != null){
     document.getElementById("logoutButton").style.display = "inline-block";
+    document.getElementById("loginButton").style.display = "none";
+    document.getElementById("signupButton").style.display = "none";
   }
   else{
     document.getElementById("logoutButton").style.display = "none";
