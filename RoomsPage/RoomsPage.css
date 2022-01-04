@@ -352,3 +352,126 @@ section.header-outer {
 .column-content p {
     margin: 0;
 }
+
+.footer{
+    width: 100%;
+    overflow: auto;
+    height: fit-content;
+    padding-top: 4em;
+}
+.footer .grid-container{
+  width: 100%;
+  grid-template-columns: repeat(4,25%);
+  padding: 0;
+  grid-column-gap: 0;
+  display: flex;
+}
+.footer .grid-item{
+  box-sizing: border-box;
+  text-align: left;
+  padding-left: 80px;
+  background-color: #1A1A1A;
+}
+.footer .grid-item h3{
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.footer .grid-item img{
+  width: 370px;
+}
+.footer .grid-item p{
+  width: 360px;
+  color: #666666;
+}
+.readMore{
+  text-decoration: none;
+  font-size: 15px;
+  float: right;
+  color: #0099FF;
+}
+.quickLinks{
+  display: grid;
+  grid-row-gap: 30px;
+  padding: 0;
+}
+.quickLinks i {
+    color: #989898;
+    font-size: 20px;
+}
+.quickLinks dt {
+  border-bottom: 1px solid #232323;
+  padding-bottom: 22px;
+}
+
+.quickLinks a{
+    text-decoration: none;
+    padding-left: 22px;
+    color: #0099FF;
+    font-size: 25px;
+}
+.postTitle h3{
+  margin-bottom: 0;
+}
+.postTitle h5{
+  margin: 0px;
+  color: #666666;
+}
+.postTitle p{
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.contactUsForm ul{
+  padding-left: 0;
+  margin: 0;
+}
+
+
+.contactUsForm li{
+  padding-bottom: 2px;
+  display: block;
+}
+.contactUsForm li:nth-child(4){
+  padding-top: 10px;
+}
+#msg{
+  background-color: #232323;
+  border: none;
+  resize: none;
+  width: 169px;
+  border-radius: 5px;
+  height: 60px;
+  color: white;
+  font-family: 'Arial-BoldMT',Georgia,'Myriad Pro';
+}
+
+.contactUsForm input {
+  background-color: #232323;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 166px;
+}
+.contactUsForm button{
+  background-color: #0099FF;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 70px;
+}
+.contactUsForm input[type=text],.contactUsForm input[type=email]{
+  color: white;
+  padding-left: 5px;
+  font-family: 'Arial-BoldMT',Georgia,'Myriad Pro';
+}
+footer{
+  background-color: #222222;
+  height: 50px;
+  color: white;
+  display: flex;
+  font-size: 15px;
+}
+footer p{
+  padding-left: 80px;
+}
