@@ -1,0 +1,516 @@
+@import 'https://fonts.googleapis.com/css?family=Poppins';
+@import 'https://fonts.googleapis.com/css?family=Poppins:700&display=swap';
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:  Georgia,'Myriad Pro';;
+}
+
+section {
+    position: relative;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 0;
+    color: #636363;
+    line-height: 1.5;
+    font-family: poppins,sans-serif;
+}
+
+p {
+    color: #6e8292;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+}
+
+.topbar{
+    background: #2E2E2E;
+    overflow: auto;
+    width: 100%;
+    height: 65px;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+    margin-right: 20px;
+}
+
+li{
+    display: inline-flex;
+}
+
+.left li{
+    border-right: 1px white solid;
+}
+
+.left li:last-child{
+    border: none;
+}
+
+.left li a{
+    width: fit-content;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: left;
+    font-size: 12px;
+    padding: 5px;
+    padding-top: 10px;        
+}
+
+.right li {
+    background-color: #787878;
+    border-radius: 50%;
+}
+
+.right li a{
+    color: #fff;
+    display: inline-block;
+    text-align: center; 
+    vertical-align: middle;
+    height: 33px;
+    width: 33px;
+}
+
+.right li a i{
+     margin-top: 9px;
+}
+
+.right li a:hover{
+    border-radius: 50%;
+    background: #DB4A39;
+}
+
+.fa-wifi{
+    transform: rotate(50deg);
+}
+
+header{
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s; 
+    z-index: 10;
+    background-color: white;
+}
+
+.fixed {
+    position: sticky; 
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    opacity: 0.95;
+}
+
+header ul{
+     position: relative;
+     display: flex;
+     justify-content: left;
+     align-items: center;
+     padding-bottom: 7px;
+     padding-left: 6px;
+     border-bottom: 3px solid #F1F1F1;
+     width: 95%;
+     left: 0;
+     margin-top: 20px;
+     margin-bottom: 0px;
+}
+
+header ul li{
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+}
+
+header ul li:first-child{
+    margin-left: 0;
+}
+
+header ul li:last-child{
+    margin-right: 150px;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 40px;
+    text-decoration: none;
+    color: #2E2E2E;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: 0.6s;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: left;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    background-size: cover;
+}
+
+header.sticky.activePage ul li a{
+    color: #9F9F9F;
+}
+
+header a::before{
+    content: '';
+    position: absolute;
+    justify-content: left;
+    left: 0;
+    top: 100%;
+    width: 0%;
+    background: #fff;
+    height: 3px;
+    transition: all .5s linear;
+    margin: 7px 0;
+    border-radius: 20px;
+}
+
+.activePage{
+    color: #9F9F9F;
+}
+
+header li a.activePage::after{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 100%;
+    background-color: #0099FF;
+    left: 0;
+    bottom: -7px;
+    border-radius: 3px;
+    color: #9F9F9F;
+}
+
+header a::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 0%;
+    background: #fff;
+    height: 3px;
+    transition: all .5s linear;
+    margin: 7px 0;
+    border-radius: 10px;
+    color: #9F9F9F;
+}
+
+header a:hover:before{
+    width: 100%;
+    background: #0099FF;
+    color: #9F9F9F;
+}
+
+header a:hover:after{
+    width: 100%;
+    background: #0099FF;
+    color: #9F9F9F;
+}
+
+section.header-outer {
+	background: url(../images/img1.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	padding: 100px 0 0
+}
+
+.header-outer h2 {
+	color: #fff;
+	margin: 0;
+	font-size: 36px;
+	padding: 10px 0 35px;
+    text-align: center;
+}
+
+.breadcrumb-content {
+	position: relative;
+	z-index: 1;
+	margin: 0 auto
+}
+
+.breadcrumb-content ul {
+	margin-bottom: 0;
+	background-color: #fff;
+	padding: 17px 30px;
+	box-shadow: 0 0 10px #ccc;
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 40%;
+	margin: 0 auto;
+	bottom: -33px;
+	border-radius: 0;
+    display: inline-flex;
+	background-color: #f1f1f1;
+}
+
+.section-title{
+    margin-left: 20px;
+    border-left: 2px solid #0099FF;
+    padding-left: 20px;
+}
+
+.price{
+    color: #0aa50a;
+}
+
+.breadcrumb-content li {
+	margin-bottom: 0;
+	font-size:20px
+}
+
+.breadcrumb-content li a {
+	transition: all ease-in-out .3s;
+	color: #666;
+	text-decoration: none;
+}
+
+.breadcrumb-content li a:hover {
+	color: #0099FF;
+}
+
+.breadcrumb-content .breadcrumb>.active {
+	color: #0099FF
+}
+
+.breadcrumb>li+li:before {
+	padding: 0 10px 0 5px;
+	content: '|'
+}
+
+.container {
+    max-width: 1240px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    position: relative;
+}
+
+.column-item {
+    margin: 20px;
+    box-shadow: 0 0 10px #ccccccb0;
+}
+
+.column-content {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.column-content a{
+    cursor: pointer;
+}
+
+.column-content h3 a {
+    color: #dc355a;
+}
+
+.column-content p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 40%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+/* section.deals-on-sale {
+    padding-bottom: 80px;
+}
+section {
+    padding: 80px 0 0;
+        padding-bottom: 0px;
+    position: relative;
+}
+header, nav, section, article, aside, footer {
+    display: block;
+}
+
+.section-title {
+    position: relative;
+    width: 50%;
+    margin-bottom: 35px;
+    z-index: 1;
+}
+
+.row.slick-slider {
+    margin: 0 -15px;
+}
+.slick-slider {
+    margin: 0;
+}
+
+.deals-on-sale .slick-prev {
+    left: 0;
+}
+.deals-on-sale .slick-prev, .deals-on-sale .slick-next {
+    background: #fff;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+} */
