@@ -46,7 +46,9 @@ body {
   font-weight: bold;
   background-color: #fff;
   border: 3px dashed #111;
+  box-shadow: 5px 5px;
   transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
+  border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
 }
 
 .droppable span {
