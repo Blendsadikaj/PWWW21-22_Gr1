@@ -9,10 +9,11 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: #eee;
   color: #111;
-  background-image: url(../images/explore-background.jpg);
-  background-size: cover;
+  background-image: url(../images/explore-quiz.webp), url(../images/explore-background.jpg);
+  background-position: left top, right bottom;
   background-origin: content-box;
-  background: url(../images/explore-background.jpg) no-repeat fixed content-box;
+  background-repeat: no-repeat;
+  background-size: 300px, cover;
 }
 
 .draggable-elements {
