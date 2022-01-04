@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+@font-face {
+  font-family: cartoonyFont;
+  src: url(../best_school_font/Best\ School\ Font\ by\ Kelik\ \(7NTypes\).otf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: 'Montserrat', sans-serif;
+  /*font-family: 'Montserrat', sans-serif;*/
+  font-family: cartoonyFont;
   background-color: #eee;
   color: #111;
   background-image: url(../images/explore-quiz.webp), url(../images/explore-background.jpg);
