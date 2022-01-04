@@ -237,6 +237,8 @@ header a:hover:after{
     color: white;
     background-color: #0099FF;
     border: none;
+    font-style: italic;
+    text-decoration: underline;
 }
 .slideshow-container {
     height: fit-content;
