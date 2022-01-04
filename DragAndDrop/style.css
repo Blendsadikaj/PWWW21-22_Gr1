@@ -102,6 +102,7 @@ article{
     width: 20%;
     margin: auto;
     text-shadow: 2px 2px #cbc0c0;
+    word-wrap: break-word;
 }
 
 article p {
