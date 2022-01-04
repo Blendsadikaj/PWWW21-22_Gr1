@@ -1,0 +1,15 @@
+CACHE MANIFEST
+
+CACHE:
+/index.html
+/style.css
+/main.js
+../images/explore-background.jpg
+../images/explore-quiz.webp
+../best_school_font
+
+NETWORK:
+*
+
+FALLBACK:
+/offline.html
