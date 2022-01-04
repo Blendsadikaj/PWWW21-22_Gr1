@@ -337,6 +337,11 @@ section.header-outer {
     height: 500px;
 }
 
+.column-item:hover{
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+
 .column-content {
     padding: 30px 20px;
     text-align: center;
