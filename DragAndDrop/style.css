@@ -23,6 +23,11 @@ body {
   transform: scale(1);
 }
 
+.back-button {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
 .draggable-elements {
   display: flex;
   justify-content: center;

@@ -80,7 +80,7 @@ function calculatePrice() {
             initialPrice = document.getElementById("basicPackagePrice").innerHTML;
         }
 
-        const timeDiff = departureDt.getTime() - arrivalDt.getTime();
+        const timeDiff = Math.abs(departureDt.getTime() - arrivalDt.getTime());
         const numOfDays = timeDiff / (1000 * 3600 * 24);
 
         if (numOfDays <= 0)
