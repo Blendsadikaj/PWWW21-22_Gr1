@@ -549,6 +549,7 @@ footer {
 
 footer p {
     padding-left: 80px;
+    transform: skew(1deg, 0deg);
 }
 
 .address-frame iframe {

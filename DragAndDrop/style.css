@@ -20,7 +20,7 @@ body {
   background-origin: content-box;
   background-repeat: no-repeat;
   background-size: 300px, cover;
-  transform: skew(1deg,0deg);
+  background-attachment: fixed;
 }
 
 .back-button {
