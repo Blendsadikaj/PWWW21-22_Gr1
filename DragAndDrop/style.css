@@ -9,6 +9,10 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: #eee;
   color: #111;
+  background-image: url(../images/explore-background.jpg);
+  background-size: cover;
+  background-origin: content-box;
+  background: url(../images/explore-background.jpg) no-repeat fixed content-box;
 }
 
 .draggable-elements {
