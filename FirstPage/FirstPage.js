@@ -61,6 +61,7 @@ function login() {
 function closeLogin() {
   document.getElementById("loginForm").style.display = "none";
   document.getElementsByClassName('content')[0].style.filter = 'blur(0px)';
+  document.getElementsByClassName('content')[0].style.pointerEvents = "auto";
 }
 
 function signUp() {
@@ -72,6 +73,7 @@ function signUp() {
 function closeSignUp() {
   document.getElementById("sign-up").style.display = "none";
   document.getElementsByClassName('content')[0].style.filter = 'blur(0px)';
+  document.getElementsByClassName('content')[0].style.pointerEvents = "auto";
 }
 
 function showAlert(action) {
@@ -85,8 +87,19 @@ function showAlert(action) {
     }
     else {
       hidden = false;
-      sessionStorage.setItem("user", document.getElementById("emailLogin").value);
-      document.getElementById("login").submit();
+
+      let username = document.getElementById("emailLogin").value;
+      let password = document.getElementById("passwordLogin").value;
+
+      if(username != '' && password != ''){
+        sessionStorage.setItem("user", document.getElementById("emailLogin").value);
+        document.getElementById("login").submit();
+        location.reload();
+      }else{
+        alert("Type your password");
+      }
+
+      
     }
   }
   else {
@@ -129,6 +142,7 @@ function showAlert(action) {
       else {
         sessionStorage.setItem("user", document.getElementById("email").value);
         document.getElementById("signUp").submit();
+        location.reload();
       }
     }
   }
