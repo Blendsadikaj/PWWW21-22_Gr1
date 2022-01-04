@@ -503,8 +503,8 @@ footer p{
 .popUp {
   display: none;
   position: fixed;
-  bottom: 27%;
-  right: 35%;
+  bottom: 40%;
+  right: 40%;
   z-index: 9;
   animation: fadeIn ease 0.7s;
 }

@@ -54,6 +54,7 @@ function showSlides(n) {
 
 function login() {
   document.getElementsByClassName('content')[0].style.filter = 'blur(4px)';
+  document.getElementsByClassName('content')[0].style.pointerEvents = "none";
   document.getElementById("login").style.display = "block";
 }
 
@@ -64,6 +65,7 @@ function closeLogin() {
 
 function signUp() {
   document.getElementsByClassName('content')[0].style.filter = 'blur(4px)';
+  document.getElementsByClassName('content')[0].style.pointerEvents = "none";
   document.getElementById("sign-up").style.display = "block";
 }
 
